@@ -1,0 +1,6 @@
+constructor SquareGame new() {
+        let square = square;
+        let direction = direction;
+
+        return square;
+    }
