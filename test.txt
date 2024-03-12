@@ -1,6 +1,24 @@
-constructor SquareGame new() {
-        let square = square;
-        let direction = direction;
+// MIT Press. Book site: www.idc.ac.il/tecs
+// File name: projects/10/ExpressionlessSquare/SquareGame.jack
+/**
+ * The SquareDance class implements the Square Dance game.
+ * In this game you can move a black square around the screen and
+ * change its size during the movement.
+ * In the beggining, the square is located at the top left corner.
+ * Use the arrow keys to move the square.
+ * Use 'z' & 'x' to decrement & increment the size.
+ * Use 'q' to quit.
+ */
+constructor SquareGame new() { //bruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruh
+        let square = square; //bruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruh
+        let direction = direction; //bruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruh
 
-        return square;
+        /* dont test me bruh
+
+
+        bruh
+
+        */
+//bruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruhbruh
+        return square; //bruh
     }
