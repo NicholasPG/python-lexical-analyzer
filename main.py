@@ -1,5 +1,5 @@
 # Replace FILE_NAME  to change file to analyze
-FILE_NAME = 'test.txt'
+FILE_NAME = 'SquareGame.jack'
 # list of reserved words for lookup
 Reserved_Words = ["class", "constructor", "method", "function", "int", "boolean", "char", "void", "var", "static",
                   "field", "let", "do", "if", "else", "while", "return", "true", "false", "null", "this"]
@@ -15,6 +15,7 @@ def analyze_file(fileName):
 
     multi_line_comment = False
 
+    print("<tokens>")
     # loop that reads through the file one line at a time
     for line in file:
         single_line_comment = False
@@ -57,18 +58,24 @@ def analyze_file(fileName):
                 lex(a)
 
     file.close()
-
+    print("</tokens>")
 
 def lex(lexeme):
     # runs through the lexeme to see what kind of token it is
     # (i.e. int literal, reserved word, identifier, etc.)
     # also prints all the stuff to the console probably
 
-    print(lexeme)
+    # checks if token is a symbol and prints it
+    if lexeme in Symbols:
+        print("<symbol>", lexeme, "<symbol>")
+        return
+
+
     # loops through each character of the word
-    a = 0
+    a = ""
     for x in lexeme:
-        a+= 1
+        a+= x
+    print(a)
 
 
 
